@@ -1,0 +1,15 @@
+﻿<Window x:Class="GuessNumber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuessNumber"
+        mc:Ignorable="d"
+        Title="Guess number" Height="450" Width="800">
+    <Grid Height="450" Width="800">
+        <Label Name="lblLivesStatus" Content="Lives remaining: 10" Foreground="Green" Margin="215,25,214.6,321" FontSize="40"></Label>
+        <Label Name="lblFrom" Content="0" FontSize="40" Margin="145,166,573,187" HorizontalAlignment="Center" Width="82"></Label>
+        <Label Name="lblTo" Content="100" FontSize="40" Margin="593,166,117.6,187" HorizontalAlignment="Center" Width="83"></Label>
+        <TextBox Name="txbGuessNumber" Text="?" KeyDown="txbGuessNumber_KeyDown" Margin="265,166,290.6,187" FontSize="40" Width="238" TextAlignment="Center"></TextBox>
+    </Grid>
+</Window>
